@@ -27,6 +27,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/E"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -36,79 +37,80 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/R"
             app:layout_constraintStart_toEndOf="@+id/D"
+            app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/R"
             style="@style/FontThemeLetters"
             android:text="@string/r"
-            app:layout_constraintStart_toEndOf="@+id/E"
-            app:layout_constraintEnd_toStartOf="@+id/Ee"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@+id/Ee"
+            app:layout_constraintStart_toEndOf="@+id/E"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Ee"
             style="@style/FontThemeLetters"
             android:text="@string/e"
-            app:layout_constraintStart_toEndOf="@+id/R"
-            app:layout_constraintEnd_toStartOf="@+id/V"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@+id/V"
+            app:layout_constraintStart_toEndOf="@+id/R"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/V"
             style="@style/FontThemeLetters"
             android:text="@string/v"
-            app:layout_constraintStart_toEndOf="@+id/Ee"
-            app:layout_constraintEnd_toStartOf="@+id/A"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@+id/A"
+            app:layout_constraintStart_toEndOf="@+id/Ee"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/A"
             style="@style/FontThemeLetters"
             android:text="@string/a"
-            app:layout_constraintStart_toEndOf="@+id/V"
-            app:layout_constraintEnd_toStartOf="@+id/N"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@+id/N"
+            app:layout_constraintStart_toEndOf="@+id/V"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/N"
             style="@style/FontThemeLetters"
             android:text="@string/n"
-            app:layout_constraintStart_toEndOf="@+id/A"
-            app:layout_constraintEnd_toStartOf="@+id/K"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/K"
+            app:layout_constraintStart_toEndOf="@+id/A"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/K"
             style="@style/FontThemeLetters"
             android:text="@string/k"
-            app:layout_constraintStart_toEndOf="@+id/N"
-            app:layout_constraintEnd_toStartOf="@+id/O"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/O"
+            app:layout_constraintStart_toEndOf="@+id/N"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/O"
             style="@style/FontThemeLetters"
             android:text="@string/o"
-                  app:layout_constraintStart_toEndOf="@+id/K"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/K"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -116,12 +118,12 @@
 
     <LinearLayout
         android:id="@+id/r0"
-        android:layout_below="@id/letters1constraintlayout"
-        android:orientation="horizontal"
-        android:background="@color/colorBlack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:baselineAligned="false">
+        android:layout_below="@id/letters1constraintlayout"
+        android:background="@color/colorBlack"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/column0"
@@ -134,8 +136,8 @@
                 android:id="@+id/row0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/textViewButtonC"
@@ -157,8 +159,8 @@
                 android:id="@+id/row1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1" >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/textViewButton7"
@@ -180,8 +182,8 @@
                 android:id="@+id/row2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1" >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/textViewButton4"
@@ -203,8 +205,8 @@
                 android:id="@+id/row3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1" >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/textViewButton1"
@@ -226,8 +228,8 @@
                 android:id="@+id/row4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1" >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/textViewButton0"
@@ -244,7 +246,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/letters1constraintlayoutVertical"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -253,98 +255,117 @@
             >
 
             <TextView
-                android:id="@+id/D"
+                android:id="@+id/D1"
                 style="@style/FontThemeLetters"
                 android:text="@string/d"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
-                android:id="@+id/E"
+                android:id="@+id/E1"
                 style="@style/FontThemeLetters"
                 android:text="@string/e"
+                app:layout_constraintBottom_toTopOf="@+id/R1"
+                app:layout_constraintTop_toBottomOf="@+id/D1"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
-                android:id="@+id/R"
+                android:id="@+id/R1"
                 style="@style/FontThemeLetters"
                 android:text="@string/r"
+                app:layout_constraintBottom_toTopOf="@+id/Ee1"
+                app:layout_constraintTop_toBottomOf="@+id/E1"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
-                android:id="@+id/Ee"
+                android:id="@+id/Ee1"
                 style="@style/FontThemeLetters"
                 android:text="@string/e"
+                app:layout_constraintBottom_toTopOf="@+id/V1"
+                app:layout_constraintTop_toBottomOf="@+id/R1"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
-                android:id="@+id/V"
+                android:id="@+id/V1"
                 style="@style/FontThemeLetters"
                 android:text="@string/v"
+                app:layout_constraintBottom_toTopOf="@+id/A1"
+                app:layout_constraintTop_toBottomOf="@+id/Ee1"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
-                android:id="@+id/A"
+                android:id="@+id/A1"
                 style="@style/FontThemeLetters"
                 android:text="@string/a"
+                app:layout_constraintBottom_toTopOf="@+id/N1"
+                app:layout_constraintTop_toBottomOf="@+id/V1"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
-                android:id="@+id/N"
+                android:id="@+id/N1"
                 style="@style/FontThemeLetters"
                 android:text="@string/n"
+                app:layout_constraintBottom_toTopOf="@+id/K1"
+                app:layout_constraintTop_toBottomOf="@+id/A1"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
-                android:id="@+id/K"
+                android:id="@+id/K1"
                 style="@style/FontThemeLetters"
                 android:text="@string/k"
+                app:layout_constraintBottom_toTopOf="@+id/O1"
+                app:layout_constraintTop_toBottomOf="@+id/N1"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
-                android:id="@+id/O"
+                android:id="@+id/O1"
                 style="@style/FontThemeLetters"
                 android:text="@string/o"
+                app:layout_constraintTop_toBottomOf="@+id/K1"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintVertical_chainStyle="spread" />
 
-
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <LinearLayout
             android:id="@+id/column1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="3">
+            android:layout_weight="3"
+            android:orientation="vertical">
 
             <Button
-                style="@style/FontTheme30_Orange"
                 android:id="@+id/textViewButtonDivision"
+                style="@style/FontTheme30_Orange"
                 android:layout_weight="1"
                 android:text="@string/textViewButtonDivision" />
+
             <Button
-                style="@style/FontTheme30_Orange"
                 android:id="@+id/textViewButtonMulti"
+                style="@style/FontTheme30_Orange"
                 android:layout_weight="1"
                 android:text="@string/textViewButtonMulti" />
+
             <Button
-                style="@style/FontTheme30_Orange"
                 android:id="@+id/textViewButtonMinus"
-                android:text="@string/textViewButtonMinus" />
-            <Button
                 style="@style/FontTheme30_Orange"
+                android:text="@string/textViewButtonMinus" />
+
+            <Button
                 android:id="@+id/textViewButtonPlus"
+                style="@style/FontTheme30_Orange"
                 android:layout_weight="1"
                 android:text="@string/textViewButtonPlus" />
+
             <Button
-                style="@style/FontTheme30_Orange"
                 android:id="@+id/textViewButtonEqual"
+                style="@style/FontTheme30_Orange"
                 android:layout_weight="1"
                 android:text="@string/textViewButtonEqual" />
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </RelativeLayout>
